@@ -1,0 +1,40 @@
+body {
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+}
+
+#signup-form {
+    border-radius: 10px;
+    width: fit-content;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 16px;
+}
+
+#signup-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 16px;
+}
+
+#signup-form .name {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+#signup-form input {
+    height: 32px;
+}
+
+#signup-form .button {
+    background-color: black;
+    color: cornsilk;
+    margin: auto;
+    height: 32px;
+    width: 80px;
+}
