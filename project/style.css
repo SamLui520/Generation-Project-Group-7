@@ -144,7 +144,7 @@ nav {
     gap: 40px;
 }
 
-.card-bg .card-modal .card-modal-left .card-modal-btn button {
+.card-bg .card-modal .card-modal-left .card-modal-btn a {
     outline: none;
     font-size: 30px;
     color: white;
@@ -152,8 +152,13 @@ nav {
     width: fit-content;
 }
 
-.card-bg .card-modal .card-modal-left .card-modal-btn button :hover {
-    background-color: rgb(0, 0, 0);
+.card-bg .card-modal .card-modal-left .card-modal-btn p {
+    border-radius: 10px;
+}
+
+.card-bg .card-modal .card-modal-left .card-modal-btn p :hover {
+    border-radius: 10px;
+    background-color: rgba(80, 80, 80, 0.658);
 }
 
 .card-bg .card-modal .card-modal-left .card-modal-btn .edit {
@@ -176,6 +181,24 @@ nav {
     color: black;
     font-size: 18px;
     margin: 10px;
+}
+
+.card-add {
+    width: 98%;
+    height: fit-content;
+    margin: 10px 10px;
+    border-radius: 30px;
+    background-color: rgb(143, 143, 143);
+    border: darkblue solid 5px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 40px;
+}
+
+.card-add i {
+    font-size: 92px;
+    text-align: center;
 }
 
 @media only screen and (min-width: 829px) {
