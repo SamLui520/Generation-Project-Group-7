@@ -1,0 +1,32 @@
+nav {
+    background-color: #05445E;
+    height: 250px;
+}
+
+#footer {
+    background-color: #D4F1F4;
+    height: 100px;
+    border-style: solid;
+}
+
+#item {
+    background-color: #75E6DA;
+    height: 223px;
+    border-style: solid;
+}
+
+.Mobile {
+    width: 828px
+}
+
+@media only screen and (min-width: 829px) {
+    div.Mobile {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 828px) {
+    div.Desktop {
+        display: none;
+    }
+}
