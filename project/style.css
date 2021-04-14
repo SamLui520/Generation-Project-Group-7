@@ -19,77 +19,81 @@ nav {
     width: 828px
 }
 
-.card {
-    width: 828px;
-    height: 400px;
+
+/*Card*/
+
+.card-custom {
+    width: 100%;
+    height: fit-content;
     margin: 0;
     border-radius: 40px;
-    background-color: blanchedalmond;
+    background-color: rgb(247, 218, 175);
     border: darkblue solid 5px;
     display: flex;
-    gap: 16px;
+    gap: 10px;
+    padding: 40px;
 }
 
-.card .left-container {
-    width: 35%;
+.card-custom .left-container {
+    width: 25%;
 }
 
-.card .left-container a {
+.card-custom .left-container a {
     text-decoration: none;
+    color: rgb(134, 46, 24);
+    font-size: 50px;
 }
 
-.card .left-container h1 {
-    color: rgb(17, 19, 16);
-    font-size: 50px;
+.card-custom .left-container h1 {
     margin: 0;
 }
 
-.card .left-container p {
+.card-custom .left-container p {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: bold;
 }
 
-.card .card-description {
+.card-custom .card-description {
     display: flex;
     flex-direction: column;
     width: 30%;
     overflow: hidden;
 }
 
-.card .card-description h2 {
+.card-custom .card-description h2 {
     font-size: 30px;
     margin: 0;
 }
 
-.card .card-description p {
+.card-custom .card-description p {
     font-size: 16px;
     margin: 5px;
 }
 
-.card .center-container {
+.card-custom .center-container {
     display: flex;
     flex-direction: column;
 }
 
-.card .center-container label {
+.card-custom .center-container label {
     font-size: 30px;
 }
 
-.card .center-container select {
+.card-custom .center-container select {
     height: 40px;
 }
 
-.card .right-container {
+.card-custom .right-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.card .right-container i {
-    font-size: 70px;
-    margin-left: 50px;
+.card-custom .right-container i {
+    font-size: 35px;
+    margin-left: 100px;
 }
 
 @media only screen and (min-width: 829px) {
