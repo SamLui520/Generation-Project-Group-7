@@ -4,86 +4,88 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Project</title>
-
-    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <script src='main.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js?cdv=40" type="text/javascript"></script>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css?cdv=40" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
 </head>
-<div class="Mobile">
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid style=">
-                <div class="row">
-                    <div class="col-2" style="padding: 40px;">
-                        <div class="dropdown">
-                            <button class="btn btn-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#"><i class="far fa-address-card"></i> Guest</a></li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        <!-- Button trigger modal -->
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                        Log in
-                                    </button>
 
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        ...
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                        <button type="button" class="btn btn-primary">Save changes</button>
+<body>
+    <div class="Mobile">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid style=">
+                    <div class="row">
+                        <div class="col-2" style="padding: 40px;">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#"><i class="far fa-address-card"></i> Guest</a></li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            Log in
+                                        </button>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            ...
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li><a class="dropdown-item" href="form\form.html">Add Item</a></li>
-                                <li><a class="dropdown-item" href="#">Setting</a></li>
-                            </ul>
+                                        </a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="form\form.html">Add Item</a></li>
+                                    <li><a class="dropdown-item" href="#">Setting</a></li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-10" style="padding: 40px;">
-                        <input class="form-control" type="search" placeholder="Search" aria-label="Search" style="width:100%;">
-                    </div>
-                    <div class="container-fluid" style=" background-color: #db6414; width: 828px; height: 130px;">
-                        <div class="row">
-                            <div class="col-4" style="padding: 15px;">
-                                <button class="btn bg-secondary" type="submit" style="width: 90%; height: 100px;">TIME</button>
-                            </div>
-                            <div class="col-4" style="padding: 15px;">
-                                <button class="btn bg-secondary" type="submit" style="width: 90%; height: 100px;">EMERGENCY</button>
-                            </div>
-                            <div class="col-4" style="padding: 15px;">
-                                <button class="btn bg-secondary" type="submit" style="width: 90%; height: 100px;">PROGRESS</button>
+                        <div class="col-10" style="padding: 40px;">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search" style="width:100%;">
+                        </div>
+                        <div class="container-fluid" style=" background-color: #db6414; width: 828px; height: 130px;">
+                            <div class="row">
+                                <div class="col-4" style="padding: 15px;">
+                                    <button class="btn bg-secondary" type="submit" style="width: 90%; height: 100px;">TIME</button>
+                                </div>
+                                <div class="col-4" style="padding: 15px;">
+                                    <button class="btn bg-secondary" type="submit" style="width: 90%; height: 100px;">EMERGENCY</button>
+                                </div>
+                                <div class="col-4" style="padding: 15px;">
+                                    <button class="btn bg-secondary" type="submit" style="width: 90%; height: 100px;">PROGRESS</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
 
-    <body>
+
 
         <!--Card-->
         <div class="card-custom">
 
             <div class="left-container">
-                <h1 class="card-name"><a href="">Task 1</a></h1>
+                <h1 class="card-name"><a href="#card-popup">Task 1</a></h1>
 
                 <p class="DueDate">Due Date: 2021/04/01</p>
                 <p class="stutas">Assigned To: Tony</p>
@@ -97,15 +99,42 @@
             <div class="center-container">
                 <label for="status">status</label><br>
                 <select name="status" id="stutas">
-                    <option value="todo">TODO</option>
-                    <option value="in-progress">IN PROGRESS</option> 
-                    <option value="review">REVIEW</option>
-                    <option value="done">DONE</option>
-                </select>
+                        <option value="todo">TODO</option>
+                        <option value="in-progress">IN PROGRESS</option> 
+                        <option value="review">REVIEW</option>
+                        <option value="done">DONE</option>
+                    </select>
             </div>
 
-            <div class="right-container">
-                <i class="fas fa-chevron-right"></i>
+
+        </div>
+        <div class="card-bg" id="card-popup">
+            <div class="card-modal">
+                <div class="card-modal-left">
+                    <h1>Task 1</h1>
+                    <p class="DueDate">Due Date: 2021/04/01</p>
+                    <p class="stutas">Assigned To: Tony</p>
+                    <div class="card-description">
+                        <h2>Description:</h2>
+                        <p>sflsjdlkf slkjdflksadjflk slkdjflksdjf sladfjklksdfjlsjdflksjdflksdjflkfsssjsdflk</p>
+                    </div>
+                    <div class="center-container">
+                        <label for="status">status</label><br>
+                        <select name="status" id="stutas">
+                                <option value="todo">TODO</option>
+                                <option value="in-progress">IN PROGRESS</option> 
+                                <option value="review">REVIEW</option>
+                                <option value="done">DONE</option>
+                            </select>
+                    </div>
+                    <div class="card-modal-btn">
+                        <button class="edit">EDIT</button>
+                        <button class="delete">DELETE</button>
+                    </div>
+                </div>
+                <div class="card-modal-right">
+                    <a href="#card-popup-close">X</a>
+                </div>
             </div>
         </div>
 
@@ -118,8 +147,8 @@
                         </div>
                         <div class="col-8 dropup" style="padding: 10px;">
                             <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 170px; height: 100%; float: right;">
-                                <i class="fas fa-grip-horizontal"></i>
-                                </button>
+                                    <i class="fas fa-grip-horizontal"></i>
+                                    </button>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="form\form.html">Add Item</a></li>
                                 <li><a class="dropdown-item" href="#">Reset</a></li>
@@ -130,204 +159,206 @@
                 </div>
             </div>
         </footer>
-    </body>
-</div>
-<div class="Desktop">
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid style=">
-                <div class="row">
-                    <div class="col-1" style="padding: 40px;">
-                        <div class="dropdown">
-                            <button class="btn btn-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#"><i class="far fa-address-card"></i> Guest</a></li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        <!-- Button trigger modal -->
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                        Log in
-                                    </button>
 
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        ...
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                        <button type="button" class="btn btn-primary">Save changes</button>
+    </div>
+    <div class="Desktop">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid style=">
+                    <div class="row">
+                        <div class="col-1" style="padding: 40px;">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#"><i class="far fa-address-card"></i> Guest</a></li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            Log in
+                                        </button>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            ...
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li><a class="dropdown-item" href="form\form.html">Add Item</a></li>
-                                <li><a class="dropdown-item" href="#">Setting</a></li>
-                            </ul>
+                                        </a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="form\form.html">Add Item</a></li>
+                                    <li><a class="dropdown-item" href="#">Setting</a></li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-11" style="padding: 40px;">
-                        <input class="form-control" type="search" placeholder="Search" aria-label="Search" style="width:85%;">
-                    </div>
-                    <div class="container-fluid" style=" background-color: #db6414; width: 1900px; height: 130px;">
-                        <div class="row">
-                            <div class="col-4" style="padding: 15px;">
-                                <button class="btn bg-secondary" type="submit" style="width: 90%; height: 100px;">TIME</button>
-                            </div>
-                            <div class="col-4" style="padding: 15px;">
-                                <button class="btn bg-secondary" type="submit" style="width: 90%; height: 100px;">EMERGENCY</button>
-                            </div>
-                            <div class="col-4" style="padding: 15px;">
-                                <button class="btn bg-secondary" type="submit" style="width: 90%; height: 100px;">PROGRESS</button>
+                        <div class="col-11" style="padding: 40px;">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search" style="width:85%;">
+                        </div>
+                        <div class="container-fluid" style=" background-color: #db6414; width: 1900px; height: 130px;">
+                            <div class="row">
+                                <div class="col-4" style="padding: 15px;">
+                                    <button class="btn bg-secondary" type="submit" style="width: 90%; height: 100px;">TIME</button>
+                                </div>
+                                <div class="col-4" style="padding: 15px;">
+                                    <button class="btn bg-secondary" type="submit" style="width: 90%; height: 100px;">EMERGENCY</button>
+                                </div>
+                                <div class="col-4" style="padding: 15px;">
+                                    <button class="btn bg-secondary" type="submit" style="width: 90%; height: 100px;">PROGRESS</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
 
-    <body>
-        <div class="container-fluid" id="item">
-            <div class="row">
-                <div class="col-2" style="padding: 20px 10px;">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="width: 125px; height: 170px;">
-                        <label class="form-check-label" for="flexCheckDefault">
-                    </label>
+        <body>
+            <div class="container-fluid" id="item">
+                <div class="row">
+                    <div class="col-2" style="padding: 20px 10px;">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="width: 125px; height: 170px;">
+                            <label class="form-check-label" for="flexCheckDefault">
+                        </label>
+                        </div>
                     </div>
-                </div>
-                <div class="col-4" style="padding: 20px 20px;">
-                    <p style="font-size: 80px;">Item</p>
-                    <p style="font-size: 20px;">Due: 01/01/2021 15:00</p>
-                </div>
-                <div class="col-2 dropend" style="padding: 20px 20px;">
-                    <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false" style="width: 80px; height: 180px; background-color: #75E6DA;">
-                    <i class="fas fa-greater-than"></i>
-                    </button>
-                    <ul class="dropdown-menu" style="background-color: rgba(255, 228, 196, 0); height: 160px; border: #D4F1F4;">
-                        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                            <button type="button" class="btn btn-success" style="width: 270px; height: 160px;">Detail</button>
-                            <button type="button" class="btn btn-warning" style="width: 270px; height: 160px;">Edit</button>
-                            <button type="button" class="btn btn-danger" style="width: 270px; height: 160px;">Delete</button>
-                        </div>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid" id="item" style=" background-color: #75E6DA; height: 223px; border-style: solid;">
-            <div class="row">
-                <div class="col-2" style="padding: 20px 10px;">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="width: 125px; height: 170px;">
-                        <label class="form-check-label" for="flexCheckDefault">
-                    </label>
+                    <div class="col-4" style="padding: 20px 20px;">
+                        <p style="font-size: 80px;">Item</p>
+                        <p style="font-size: 20px;">Due: 01/01/2021 15:00</p>
                     </div>
-                </div>
-                <div class="col-4" style="padding: 20px 20px;">
-                    <p style="font-size: 80px;">Item</p>
-                    <p style="font-size: 20px;">Due: 01/01/2021 15:00</p>
-                </div>
-                <div class="col-2 dropend" style="padding: 20px 20px;">
-                    <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false" style="width: 80px; height: 180px; background-color: #75E6DA;">
-                    <i class="fas fa-greater-than"></i>
-                    </button>
-                    <ul class="dropdown-menu" style="background-color: rgba(255, 228, 196, 0); height: 160px; border: #D4F1F4;">
-                        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                            <button type="button" class="btn btn-success" style="width: 270px; height: 160px;">Detail</button>
-                            <button type="button" class="btn btn-warning" style="width: 270px; height: 160px;">Edit</button>
-                            <button type="button" class="btn btn-danger" style="width: 270px; height: 160px;">Delete</button>
-                        </div>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid" id="item" style=" background-color: #75E6DA; height: 223px; border-style: solid;">
-            <div class="row">
-                <div class="col-2" style="padding: 20px 10px;">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="width: 125px; height: 170px;">
-                        <label class="form-check-label" for="flexCheckDefault">
-                    </label>
-                    </div>
-                </div>
-                <div class="col-4" style="padding: 20px 20px;">
-                    <p style="font-size: 80px;">Item</p>
-                    <p style="font-size: 20px;">Due: 01/01/2021 15:00</p>
-                </div>
-                <div class="col-2 dropend" style="padding: 20px 20px;">
-                    <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false" style="width: 80px; height: 180px; background-color: #75E6DA;">
-                    <i class="fas fa-greater-than"></i>
-                    </button>
-                    <ul class="dropdown-menu" style="background-color: rgba(255, 228, 196, 0); height: 160px; border: #D4F1F4;">
-                        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                            <button type="button" class="btn btn-success" style="width: 270px; height: 160px;">Detail</button>
-                            <button type="button" class="btn btn-warning" style="width: 270px; height: 160px;">Edit</button>
-                            <button type="button" class="btn btn-danger" style="width: 270px; height: 160px;">Delete</button>
-                        </div>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid" id="item" style=" background-color: #75E6DA; height: 223px; border-style: solid;">
-            <div class="row">
-                <div class="col-2" style="padding: 20px 10px;">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="width: 125px; height: 170px;">
-                        <label class="form-check-label" for="flexCheckDefault">
-                    </label>
-                    </div>
-                </div>
-                <div class="col-4" style="padding: 20px 20px;">
-                    <p style="font-size: 80px;">Item</p>
-                    <p style="font-size: 20px;">Due: 01/01/2021 15:00</p>
-                </div>
-                <div class="col-2 dropend" style="padding: 20px 20px;">
-                    <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false" style="width: 80px; height: 180px; background-color: #75E6DA;">
-                    <i class="fas fa-greater-than"></i>
-                    </button>
-                    <ul class="dropdown-menu" style="background-color: rgba(255, 228, 196, 0); height: 160px; border: #D4F1F4;">
-                        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                            <button type="button" class="btn btn-success" style="width: 270px; height: 160px;">Detail</button>
-                            <button type="button" class="btn btn-warning" style="width: 270px; height: 160px;">Edit</button>
-                            <button type="button" class="btn btn-danger" style="width: 270px; height: 160px;">Delete</button>
-                        </div>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <footer>
-            <div class="container-fluid" id="footer">
-                <div class="dropdown">
-                    <div class="row">
-                        <div class="col-4" style="padding: 10px;">
-                            <button class="btn bg-secondary" type="submit" style="width: 100%; height:60px;">Item Done</button>
-                        </div>
-                        <div class="col-8 dropup" style="padding: 10px;">
-                            <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 340px; height: 100%; float: right;">
-                                <i class="fas fa-grip-horizontal"></i>
-                                </button>
-                            <ul class="dropdown-menu" style="width: 340px;">
-                                <li><a class="dropdown-item" href="form\form.html">Add Item</a></li>
-                                <li><a class="dropdown-item" href="#">Reset</a></li>
-                                <li><a class="dropdown-item" href="#">Quit</a></li>
-                            </ul>
-                        </div>
+                    <div class="col-2 dropend" style="padding: 20px 20px;">
+                        <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false" style="width: 80px; height: 180px; background-color: #75E6DA;">
+                        <i class="fas fa-greater-than"></i>
+                        </button>
+                        <ul class="dropdown-menu" style="background-color: rgba(255, 228, 196, 0); height: 160px; border: #D4F1F4;">
+                            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                <button type="button" class="btn btn-success" style="width: 270px; height: 160px;">Detail</button>
+                                <button type="button" class="btn btn-warning" style="width: 270px; height: 160px;">Edit</button>
+                                <button type="button" class="btn btn-danger" style="width: 270px; height: 160px;">Delete</button>
+                            </div>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </footer>
-    </body>
-</div>
+            <div class="container-fluid" id="item" style=" background-color: #75E6DA; height: 223px; border-style: solid;">
+                <div class="row">
+                    <div class="col-2" style="padding: 20px 10px;">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="width: 125px; height: 170px;">
+                            <label class="form-check-label" for="flexCheckDefault">
+                        </label>
+                        </div>
+                    </div>
+                    <div class="col-4" style="padding: 20px 20px;">
+                        <p style="font-size: 80px;">Item</p>
+                        <p style="font-size: 20px;">Due: 01/01/2021 15:00</p>
+                    </div>
+                    <div class="col-2 dropend" style="padding: 20px 20px;">
+                        <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false" style="width: 80px; height: 180px; background-color: #75E6DA;">
+                        <i class="fas fa-greater-than"></i>
+                        </button>
+                        <ul class="dropdown-menu" style="background-color: rgba(255, 228, 196, 0); height: 160px; border: #D4F1F4;">
+                            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                <button type="button" class="btn btn-success" style="width: 270px; height: 160px;">Detail</button>
+                                <button type="button" class="btn btn-warning" style="width: 270px; height: 160px;">Edit</button>
+                                <button type="button" class="btn btn-danger" style="width: 270px; height: 160px;">Delete</button>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid" id="item" style=" background-color: #75E6DA; height: 223px; border-style: solid;">
+                <div class="row">
+                    <div class="col-2" style="padding: 20px 10px;">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="width: 125px; height: 170px;">
+                            <label class="form-check-label" for="flexCheckDefault">
+                        </label>
+                        </div>
+                    </div>
+                    <div class="col-4" style="padding: 20px 20px;">
+                        <p style="font-size: 80px;">Item</p>
+                        <p style="font-size: 20px;">Due: 01/01/2021 15:00</p>
+                    </div>
+                    <div class="col-2 dropend" style="padding: 20px 20px;">
+                        <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false" style="width: 80px; height: 180px; background-color: #75E6DA;">
+                        <i class="fas fa-greater-than"></i>
+                        </button>
+                        <ul class="dropdown-menu" style="background-color: rgba(255, 228, 196, 0); height: 160px; border: #D4F1F4;">
+                            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                <button type="button" class="btn btn-success" style="width: 270px; height: 160px;">Detail</button>
+                                <button type="button" class="btn btn-warning" style="width: 270px; height: 160px;">Edit</button>
+                                <button type="button" class="btn btn-danger" style="width: 270px; height: 160px;">Delete</button>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid" id="item" style=" background-color: #75E6DA; height: 223px; border-style: solid;">
+                <div class="row">
+                    <div class="col-2" style="padding: 20px 10px;">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="width: 125px; height: 170px;">
+                            <label class="form-check-label" for="flexCheckDefault">
+                        </label>
+                        </div>
+                    </div>
+                    <div class="col-4" style="padding: 20px 20px;">
+                        <p style="font-size: 80px;">Item</p>
+                        <p style="font-size: 20px;">Due: 01/01/2021 15:00</p>
+                    </div>
+                    <div class="col-2 dropend" style="padding: 20px 20px;">
+                        <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false" style="width: 80px; height: 180px; background-color: #75E6DA;">
+                        <i class="fas fa-greater-than"></i>
+                        </button>
+                        <ul class="dropdown-menu" style="background-color: rgba(255, 228, 196, 0); height: 160px; border: #D4F1F4;">
+                            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                <button type="button" class="btn btn-success" style="width: 270px; height: 160px;">Detail</button>
+                                <button type="button" class="btn btn-warning" style="width: 270px; height: 160px;">Edit</button>
+                                <button type="button" class="btn btn-danger" style="width: 270px; height: 160px;">Delete</button>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="container-fluid" id="footer">
+                    <div class="dropdown">
+                        <div class="row">
+                            <div class="col-4" style="padding: 10px;">
+                                <button class="btn bg-secondary" type="submit" style="width: 100%; height:60px;">Item Done</button>
+                            </div>
+                            <div class="col-8 dropup" style="padding: 10px;">
+                                <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 340px; height: 100%; float: right;">
+                                    <i class="fas fa-grip-horizontal"></i>
+                                    </button>
+                                <ul class="dropdown-menu" style="width: 340px;">
+                                    <li><a class="dropdown-item" href="form\form.html">Add Item</a></li>
+                                    <li><a class="dropdown-item" href="#">Reset</a></li>
+                                    <li><a class="dropdown-item" href="#">Quit</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </body>
+    </div>
+</body>
+
 
 </html>
