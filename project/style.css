@@ -19,6 +19,79 @@ nav {
     width: 828px
 }
 
+.card {
+    width: 828px;
+    height: 400px;
+    margin: 0;
+    border-radius: 40px;
+    background-color: blanchedalmond;
+    border: darkblue solid 5px;
+    display: flex;
+    gap: 16px;
+}
+
+.card .left-container {
+    width: 35%;
+}
+
+.card .left-container a {
+    text-decoration: none;
+}
+
+.card .left-container h1 {
+    color: rgb(17, 19, 16);
+    font-size: 50px;
+    margin: 0;
+}
+
+.card .left-container p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card .card-description {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    overflow: hidden;
+}
+
+.card .card-description h2 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.card .card-description p {
+    font-size: 16px;
+    margin: 5px;
+}
+
+.card .center-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card .center-container label {
+    font-size: 30px;
+}
+
+.card .center-container select {
+    height: 40px;
+}
+
+.card .right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card .right-container i {
+    font-size: 70px;
+    margin-left: 50px;
+}
+
 @media only screen and (min-width: 829px) {
     div.Mobile {
         display: none;

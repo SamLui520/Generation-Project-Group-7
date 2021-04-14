@@ -77,114 +77,36 @@
     </header>
 
     <body>
-        <div class="container-fluid" id="item">
-            <div class="row">
-                <div class="col-2" style="padding: 20px 10px;">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="width: 125px; height: 170px;">
-                        <label class="form-check-label" for="flexCheckDefault">
-                    </label>
-                    </div>
-                </div>
-                <div class="col-4" style="padding: 20px 20px;">
-                    <p style="font-size: 80px;">Item</p>
-                    <p style="font-size: 20px;">Due: 01/01/2021 15:00</p>
-                </div>
-                <div class="col-2 dropend" style="padding: 20px 20px;">
-                    <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false" style="width: 80px; height: 180px; background-color: #75E6DA;">
-                    <i class="fas fa-greater-than"></i>
-                    </button>
-                    <ul class="dropdown-menu" style="background-color: rgba(255, 228, 196, 0); height: 160px; border: #D4F1F4;">
-                        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                            <button type="button" class="btn btn-success" style="width: 100px; height: 160px;">Detail</button>
-                            <button type="button" class="btn btn-warning" style="width: 100px; height: 160px;">Edit</button>
-                            <button type="button" class="btn btn-danger" style="width: 100px; height: 160px;">Delete</button>
-                        </div>
-                    </ul>
-                </div>
+
+        <div class="card">
+
+            <div class="left-container">
+                <h1 class="card-name"><a href="">Task 1</a></h1>
+
+                <p class="DueDate">Due Date: 2021/04/01</p>
+                <p class="stutas">Assigned To: Tony</p>
+            </div>
+
+            <div class="card-description">
+                <h2>Description:</h2>
+                <p>sflsjdlkf slkjdflksadjflk slkdjflksdjf sladfjklksdfjlsjdflksjdflksdjflkfsssjsdflk</p>
+            </div>
+
+            <div class="center-container">
+                <label for="status">status</label><br>
+                <select name="status" id="stutas">
+                    <option value="todo">TODO</option>
+                    <option value="in-progress">IN PROGRESS</option> 
+                    <option value="review">REVIEW</option>
+                    <option value="done">DONE</option>
+                </select>
+            </div>
+
+            <div class="right-container">
+                <i class="fas fa-chevron-right"></i>
             </div>
         </div>
-        <div class="container-fluid" id="item" style=" background-color: #75E6DA; height: 223px; border-style: solid;">
-            <div class="row">
-                <div class="col-2" style="padding: 20px 10px;">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="width: 125px; height: 170px;">
-                        <label class="form-check-label" for="flexCheckDefault">
-                    </label>
-                    </div>
-                </div>
-                <div class="col-4" style="padding: 20px 20px;">
-                    <p style="font-size: 80px;">Item</p>
-                    <p style="font-size: 20px;">Due: 01/01/2021 15:00</p>
-                </div>
-                <div class="col-2 dropend" style="padding: 20px 20px;">
-                    <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false" style="width: 80px; height: 180px; background-color: #75E6DA;">
-                    <i class="fas fa-greater-than"></i>
-                    </button>
-                    <ul class="dropdown-menu" style="background-color: rgba(255, 228, 196, 0); height: 160px; border: #D4F1F4;">
-                        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                            <button type="button" class="btn btn-success" style="width: 100px; height: 160px;">Detail</button>
-                            <button type="button" class="btn btn-warning" style="width: 100px; height: 160px;">Edit</button>
-                            <button type="button" class="btn btn-danger" style="width: 100px; height: 160px;">Delete</button>
-                        </div>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid" id="item" style=" background-color: #75E6DA; height: 223px; border-style: solid;">
-            <div class="row">
-                <div class="col-2" style="padding: 20px 10px;">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="width: 125px; height: 170px;">
-                        <label class="form-check-label" for="flexCheckDefault">
-                    </label>
-                    </div>
-                </div>
-                <div class="col-4" style="padding: 20px 20px;">
-                    <p style="font-size: 80px;">Item</p>
-                    <p style="font-size: 20px;">Due: 01/01/2021 15:00</p>
-                </div>
-                <div class="col-2 dropend" style="padding: 20px 20px;">
-                    <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false" style="width: 80px; height: 180px; background-color: #75E6DA;">
-                    <i class="fas fa-greater-than"></i>
-                    </button>
-                    <ul class="dropdown-menu" style="background-color: rgba(255, 228, 196, 0); height: 160px; border: #D4F1F4;">
-                        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                            <button type="button" class="btn btn-success" style="width: 100px; height: 160px;">Detail</button>
-                            <button type="button" class="btn btn-warning" style="width: 100px; height: 160px;">Edit</button>
-                            <button type="button" class="btn btn-danger" style="width: 100px; height: 160px;">Delete</button>
-                        </div>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid" id="item" style=" background-color: #75E6DA; height: 223px; border-style: solid;">
-            <div class="row">
-                <div class="col-2" style="padding: 20px 10px;">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="width: 125px; height: 170px;">
-                        <label class="form-check-label" for="flexCheckDefault">
-                    </label>
-                    </div>
-                </div>
-                <div class="col-4" style="padding: 20px 20px;">
-                    <p style="font-size: 80px;">Item</p>
-                    <p style="font-size: 20px;">Due: 01/01/2021 15:00</p>
-                </div>
-                <div class="col-2 dropend" style="padding: 20px 20px;">
-                    <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false" style="width: 80px; height: 180px; background-color: #75E6DA;">
-                    <i class="fas fa-greater-than"></i>
-                    </button>
-                    <ul class="dropdown-menu" style="background-color: rgba(255, 228, 196, 0); height: 160px; border: #D4F1F4;">
-                        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                            <button type="button" class="btn btn-success" style="width: 100px; height: 160px;">Detail</button>
-                            <button type="button" class="btn btn-warning" style="width: 100px; height: 160px;">Edit</button>
-                            <button type="button" class="btn btn-danger" style="width: 100px; height: 160px;">Delete</button>
-                        </div>
-                    </ul>
-                </div>
-            </div>
-        </div>
+
         <footer>
             <div class="container-fluid" id="footer">
                 <div class="dropdown">
