@@ -1,41 +1,99 @@
 <html>
-
 <head>
+  <title> 
+  <link href="form(edit).css" type="text/css" rel="stylesheet">
+  </title>
 </head>
-
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 <body>
-    <form>
-        <div>
-            <li><a href="D:\GitHub\Generation-Project-Group-7\project\index.html">back</a></li>
-            <input type="submit" value="back" href="D:\GitHub\Generation-Project-Group-7\project\index.html">
+  <form class="row g-3">
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label">Email</label>
+      <input type="Name" class="form-control" id="inputEmail4">
+    </div>
+    <div class="col-md-6">
+      <!-- <label for="inputPassword4" class="form-label">Password</label> -->
+      <!-- <input type="Description" class="form-control" id="inputPassword4"> -->
+    </div>
+    <div class="col-12">
+      
+      
+      <label for="inputState" class="form-label" placeholder="Please type name here!" >Name</label>
+      <select id="inputState" class="form-select">
+        <option selected>Please Insert your name here!</option>
+        <option type="textarea"></option>
+        <option>Peter</option>
+        <option>Tom</option>
+        <option>Mary</option>
+        <option>Sam</option>
+  
+  
+  
+        </select>
+    </div>
+    <div class="col-12">
+      <!-- <label for="inputAddress2" class="form-label">Address 2</label> -->
+      <!-- <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor"> -->
+    </div>
+    <div class="col-md-6">
+      <!-- <label for="inputCity" class="form-label">City</label> -->
+      <!-- <input type="text" class="form-control" id="inputCity"> -->
+    </div>
+    <div class="col-md-4">
+      <label for="inputState" class="form-label">Status</label>
+      <select id="inputState" class="form-select">
+        <option selected>Choose...</option>
+        <option>TODO</option>
+        <option>IN PROGRESS</option>
+        <option>REVIEW</option>
+        <option>DONE</option>
 
-            <label for="item">item:</label>
-            <br>
-            <label for="start date">開始日期:</label>
-            <br>
-            <label for="start time">開始時間:</label>
-            <input id="全日" type="checkbox" name="answer" value="全日" required>
-            <br>
-            <label for="end date">結束日期:</label>
-            <br>
-            <label for="end time">結束時間:</label>
-            <input id="全日" type="checkbox" name="answer" value="全日" required>
-            <br>
-            <input id="1" type="radio" name="answer" value="1" required>
-            <input id="2" type="radio" name="answer" value="2" required>
-            <input id="3" type="radio" name="answer" value="3" required>
-            <br>
 
-            <label for="Remarks">備註:</label>
-            <br>
-            <textarea id="Remarks" name="remarks" rows="8" cols="40" required></textarea>
-            <br>
+      </select>
+      
+      <label for="inputPassword4" class="form-label">Description:</label><br>
+      <textarea id="Remarks" name="remarks" rows="8" cols="40" required></textarea>
+    </div>
+    <label for="Assignedto" class="form-label" placeholder="name" >Assigned to:</label>
+    <!-- <input type="text" class="form-control" id="Assignedto"> -->
+    <!-- <label for="inputState" class="form-label">Name</label> -->
+    <select id="inputState" class="form-select">
+      <option selected>Choose...</option>
+      <option>Peter</option>
+      <option>Tom</option>
+      <option>Mary</option>
+      <option>Sam</option>
 
-            <input type="submit" value="reset" required>
-            <input type="submit" value="save" required>
 
-        </div>
-    </form>
+
+      </select>
+
+
+    </div>
+
+    <label for="birthday">Start Date:</label>
+<input type="date" id="birthday" name="birthday">
+<label for="appt">Start Time:</label>
+<input type="time" id="appt" name="appt">
+<label for="birthday">End Date:</label>
+<input type="date" id="birthday" name="birthday">
+<label for="appt">End Time:</label>
+<input type="time" id="appt" name="appt">
+    <div class="col-md-2">
+      <label for="inputZip" class="form-label"></label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          Check me out
+        </label>
+      </div>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Sign in</button>
+    </div>
+  </form>
 </body>
-
 </html>
