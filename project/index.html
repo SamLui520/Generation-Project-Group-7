@@ -14,18 +14,18 @@
 
 <body>
     <div class="Mobile">
-        <header>
+        <header class="fixed-top">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-2" style="padding: 40px 20px;">
                             <div class="dropdown">
                                 <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#"><i class="far fa-address-card"></i> Guest</a></li>
-                                    <li><a class="dropdown-item" href="#">Setting</a></li>
+                                    <li><a class="dropdown-item" href="page/signup.html">signup</a></li>
                                     <li><a class="dropdown-item" href="page/form.html">Add Item</a></li>
                                     <li><a class="dropdown-item" href="#">Reset</a></li>
                                     <li><a class="dropdown-item" href="#">Quit</a></li>
@@ -88,147 +88,158 @@
                     </div>
                 </div>
             </nav>
-        </header>
-        <div class="container-fluid" style=" background-color: #db6414; width: 828px; height: 130px;">
-            <div class="row">
-                <div class="col-4" style="padding: 15px;">
-                    <button class="btn bg-secondary" type="submit" style="width: 90%; height: 100px;">School</button>
-                </div>
-                <div class="col-4" style="padding: 15px;">
-                    <button class="btn bg-secondary" type="submit" style="width: 90%; height: 100px;">Work</button>
-                </div>
-                <div class="col-4" style="padding: 15px;">
-                    <button class="btn bg-secondary" type="submit" style="width: 90%; height: 100px;">Bills</button>
+            <div class="container-fluid" style=" background-color: #db6414; width: 828px; height: 130px;">
+                <div class="row">
+                    <div class="col-4" style="padding: 15px;">
+                        <button class="btn bg-secondary" type="submit" style="width: 90%; height: 100px;">School</button>
+                    </div>
+                    <div class="col-4" style="padding: 15px;">
+                        <button class="btn bg-secondary" type="submit" style="width: 90%; height: 100px;">Work</button>
+                    </div>
+                    <div class="col-4" style="padding: 15px;">
+                        <button class="btn bg-secondary" type="submit" style="width: 90%; height: 100px;">Office</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!--Card-->
-        <div id="card-section">
-            <div class="card-custom">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="width: 50px; height: 50px;">
-                    <label class="form-check-label" for="flexCheckDefault"></label>
-                </div>
-                <div class="left-container">
-                    <h1 class="card-name"><a href="#card-popup">Task 1</a></h1>
+        </header>
 
-                    <p class="DueDate">Due Date: 2021/04/01</p>
-                    <p class="stutas">Assigned To: School</p>
-                </div>
+        <body>
+            <div class="container-fluid" style="width: 100%; height: 280px;">
 
-                <div class="card-description">
-                    <h2>Description:</h2>
-                    <p>sflsjdlkf slkjdflksadjflk slkdjflksdjf sladfjklksdfjlsjdflksjdflksdjflkfsssjsdflk</p>
-                </div>
+            </div>
+            <!--Card-->
+            <div id="card-section">
+                <div class="card-custom">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="width: 50px; height: 50px;">
+                        <label class="form-check-label" for="flexCheckDefault"></label>
+                    </div>
+                    <div class="left-container">
+                        <h1 class="card-name"><a href="#card-popup">Task 1</a></h1>
 
-                <div class="center-container">
-                    <label for="status">status</label><br>
-                    <select name="status" id="stutas">
+                        <p class="DueDate">Due Date: 2021/04/01</p>
+                        <p class="stutas">Assigned To: Tony</p>
+                    </div>
+
+                    <div class="card-description">
+                        <h2>Description:</h2>
+                        <p>sflsjdlkf slkjdflksadjflk slkdjflksdjf sladfjklksdfjlsjdflksjdflksdjflkfsssjsdflk</p>
+                    </div>
+
+                    <div class="center-container">
+                        <label for="status">status</label><br>
+                        <select name="status" id="stutas">
                             <option value="todo">TODO</option>
                             <option value="in-progress">IN PROGRESS</option> 
                             <option value="review">REVIEW</option>
                             <option value="done">DONE</option>
                         </select>
+                    </div>
+
+
                 </div>
-
-
-            </div>
-            <div class="card-bg" id="card-popup">
-                <div class="card-modal">
-                    <div class="card-modal-left">
-                        <h1>Task 1</h1>
-                        <p class="DueDate">Due Date: 2021/04/01</p>
-                        <p class="stutas">Assigned To: School</p>
-                        <div class="card-description">
-                            <h2>Description:</h2>
-                            <p>sflsjdlkf slkjdflksadjflk slkdjflksdjf sladfjklksdfjlsjdflksjdflksdjflkfsssjsdflk</p>
-                        </div>
-                        <div class="center-container">
-                            <label for="status">status</label><br>
-                            <select name="status" id="stutas">
+                <div class="card-bg" id="card-popup">
+                    <div class="card-modal">
+                        <div class="card-modal-left">
+                            <h1>Task 1</h1>
+                            <p class="DueDate">Due Date: 2021/04/01</p>
+                            <p class="stutas">Assigned To: Tony</p>
+                            <div class="card-description">
+                                <h2>Description:</h2>
+                                <p>sflsjdlkf slkjdflksadjflk slkdjflksdjf sladfjklksdfjlsjdflksjdflksdjflkfsssjsdflk</p>
+                            </div>
+                            <div class="center-container">
+                                <label for="status">status</label><br>
+                                <select name="status" id="stutas">
                                     <option value="todo">TODO</option>
                                     <option value="in-progress">IN PROGRESS</option> 
                                     <option value="review">REVIEW</option>
                                     <option value="done">DONE</option>
                                 </select>
+                            </div>
+                            <div class="card-modal-btn">
+                                <p class="edit"><a class="dropdown-item" href="page/form.html">EDIT</a></p>
+                                <p class="delete"><a class="dropdown-item" href="#card-popup-close">DELETE</a></p>
+                            </div>
                         </div>
-                        <div class="card-modal-btn">
-                            <p class="edit"><a class="dropdown-item" href="page/form.html">EDIT</a></p>
-                            <p class="delete"><a class="dropdown-item" href="#card-popup-close">DELETE</a></p>
+                        <div class="card-modal-right">
+                            <a href="#card-popup-close">X</a>
                         </div>
-                    </div>
-                    <div class="card-modal-right">
-                        <a href="#card-popup-close">X</a>
                     </div>
                 </div>
             </div>
-        </div>
-        <!--Card-->
-        <div id="card-section">
-            <div class="card-custom">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="width: 50px; height: 50px;">
-                    <label class="form-check-label" for="flexCheckDefault"></label>
-                </div>
-                <div class="left-container">
-                    <h1 class="card-name"><a href="#card-popup">Task 2</a></h1>
+            <!--Card-->
+            <div id="card-section">
+                <div class="card-custom">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="width: 50px; height: 50px;">
+                        <label class="form-check-label" for="flexCheckDefault"></label>
+                    </div>
+                    <div class="left-container">
+                        <h1 class="card-name"><a href="#card-popup">Task 2</a></h1>
 
-                    <p class="DueDate">Due Date: 2021/04/01</p>
-                    <p class="stutas">Assigned To: Work</p>
-                </div>
+                        <p class="DueDate">Due Date: 2021/04/01</p>
+                        <p class="stutas">Assigned To: Tony</p>
+                    </div>
 
-                <div class="card-description">
-                    <h2>Description:</h2>
-                    <p>sflsjdlkf slkjdflksadjflk slkdjflksdjf sladfjklksdfjlsjdflksjdflksdjflkfsssjsdflk</p>
-                </div>
+                    <div class="card-description">
+                        <h2>Description:</h2>
+                        <p>sflsjdlkf slkjdflksadjflk slkdjflksdjf sladfjklksdfjlsjdflksjdflksdjflkfsssjsdflk</p>
+                    </div>
 
-                <div class="center-container">
-                    <label for="status">status</label><br>
-                    <select name="status" id="stutas">
+                    <div class="center-container">
+                        <label for="status">status</label><br>
+                        <select name="status" id="stutas">
                                     <option value="todo">TODO</option>
                                     <option value="in-progress">IN PROGRESS</option> 
                                     <option value="review">REVIEW</option>
                                     <option value="done">DONE</option>
                                 </select>
+                    </div>
+
+
                 </div>
-
-
-            </div>
-            <div class="card-bg" id="card-popup">
-                <div class="card-modal">
-                    <div class="card-modal-left">
-                        <h1>Task 2</h1>
-                        <p class="DueDate">Due Date: 2021/04/01</p>
-                        <p class="stutas">Assigned To: Work</p>
-                        <div class="card-description">
-                            <h2>Description:</h2>
-                            <p>sflsjdlkf slkjdflksadjflk slkdjflksdjf sladfjklksdfjlsjdflksjdflksdjflkfsssjsdflk</p>
-                        </div>
-                        <div class="center-container">
-                            <label for="status">status</label><br>
-                            <select name="status" id="stutas">
+                <div class="card-bg" id="card-popup">
+                    <div class="card-modal">
+                        <div class="card-modal-left">
+                            <h1>Task 2</h1>
+                            <p class="DueDate">Due Date: 2021/04/01</p>
+                            <p class="stutas">Assigned To: Tony</p>
+                            <div class="card-description">
+                                <h2>Description:</h2>
+                                <p>sflsjdlkf slkjdflksadjflk slkdjflksdjf sladfjklksdfjlsjdflksjdflksdjflkfsssjsdflk</p>
+                            </div>
+                            <div class="center-container">
+                                <label for="status">status</label><br>
+                                <select name="status" id="stutas">
                                             <option value="todo">TODO</option>
                                             <option value="in-progress">IN PROGRESS</option> 
                                             <option value="review">REVIEW</option>
                                             <option value="done">DONE</option>
                                         </select>
+                            </div>
+                            <div class="card-modal-btn">
+                                <p class="edit"><a class="dropdown-item" href="page/form.html">EDIT</a></p>
+                                <p class="delete"><a class="dropdown-item" href="#card-popup-close">DELETE</a></p>
+                            </div>
                         </div>
-                        <div class="card-modal-btn">
-                            <p class="edit"><a class="dropdown-item" href="page/form.html">EDIT</a></p>
-                            <p class="delete"><a class="dropdown-item" href="#card-popup-close">DELETE</a></p>
+                        <div class="card-modal-right">
+                            <a href="#card-popup-close">X</a>
                         </div>
-                    </div>
-                    <div class="card-modal-right">
-                        <a href="#card-popup-close">X</a>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="card-add">
-            <a href="page/form.html"><i class="fas fa-plus-circle"></i></a>
-        </div>
-        <footer>
-            <div class="container-fluid" id="footer">
+            <div class="card-add">
+                <a href="page/form.html"><i class="fas fa-plus-circle"></i></a>
+            </div>
+            <div class="container-fluid" style="width: 100%; height: 100px;">
+
+            </div>
+        </body>
+
+
+        <footer class="fixed-bottom" id="footer">
+            <div class="container-fluid">
                 <div class="dropdown">
                     <div class="row">
                         <div class="col-4" style="padding: 10px;">
@@ -262,7 +273,7 @@
 
     </div>
     <div class="Desktop">
-        <header>
+        <header class="fixed-top">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
                     <div class="row">
@@ -273,8 +284,8 @@
                                  </button>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#"><i class="far fa-address-card"></i> Guest</a></li>
+                                    <li><a class="dropdown-item" href="page/signup.html">signup</a></li>
                                     <li><a class="dropdown-item" href="page/form.html">Add Item</a></li>
-                                    <li><a class="dropdown-item" href="#">Setting</a></li>
                                     <li><a class="dropdown-item" href="#">Reset</a></li>
                                     <li><a class="dropdown-item" href="#">Quit</a></li>
                                 </ul>
@@ -336,9 +347,6 @@
                     </div>
                 </div>
             </nav>
-        </header>
-
-        <body>
             <div class="container-fluid" style=" background-color: #db6414; width: 100%px; height: 130px;">
                 <div class="row">
                     <div class="col-4" style="padding: 15px;">
@@ -348,9 +356,14 @@
                         <button class="btn bg-secondary" type="submit" style="width: 90%; height: 100px;">Work</button>
                     </div>
                     <div class="col-4" style="padding: 15px;">
-                        <button class="btn bg-secondary" type="submit" style="width: 90%; height: 100px;">Bills</button>
+                        <button class="btn bg-secondary" type="submit" style="width: 90%; height: 100px;">Office</button>
                     </div>
                 </div>
+        </header>
+
+        <body>
+            <div class="container-fluid" style="width: 100%; height: 280px;">
+
             </div>
             <div class="row">
                 <div class="col-6">
@@ -365,7 +378,7 @@
                                 <h1 class="card-name"><a href="#card-popup">Task 1</a></h1>
 
                                 <p class="DueDate">Due Date: 2021/04/01</p>
-                                <p class="stutas">Assigned To: School</p>
+                                <p class="stutas">Assigned To: Tony</p>
                             </div>
 
                             <div class="card-description">
@@ -390,7 +403,7 @@
                                 <div class="card-modal-left">
                                     <h1>Task 1</h1>
                                     <p class="DueDate">Due Date: 2021/04/01</p>
-                                    <p class="stutas">Assigned To: School</p>
+                                    <p class="stutas">Assigned To: Tony</p>
                                     <div class="card-description">
                                         <h2>Description:</h2>
                                         <p>sflsjdlkf slkjdflksadjflk slkdjflksdjf sladfjklksdfjlsjdflksjdflksdjflkfsssjsdflk</p>
@@ -428,7 +441,7 @@
                                 <h1 class="card-name"><a href="#card-popup">Task 2</a></h1>
 
                                 <p class="DueDate">Due Date: 2021/04/01</p>
-                                <p class="stutas">Assigned To: Bill</p>
+                                <p class="stutas">Assigned To: Tony</p>
                             </div>
 
                             <div class="card-description">
@@ -453,7 +466,7 @@
                                 <div class="card-modal-left">
                                     <h1>Task 1</h1>
                                     <p class="DueDate">Due Date: 2021/04/01</p>
-                                    <p class="stutas">Assigned To: School</p>
+                                    <p class="stutas">Assigned To: Tony</p>
                                     <div class="card-description">
                                         <h2>Description:</h2>
                                         <p>sflsjdlkf slkjdflksadjflk slkdjflksdjf sladfjklksdfjlsjdflksjdflksdjflkfsssjsdflk</p>
@@ -567,11 +580,11 @@
                             <div class="center-container">
                                 <label for="status">status</label><br>
                                 <select name="status" id="stutas">
-                    <option value="todo">TODO</option>
-                    <option value="in-progress">IN PROGRESS</option> 
-                    <option value="review">REVIEW</option>
-                    <option value="done">DONE</option>
-                </select>
+                                <option value="todo">TODO</option>
+                                <option value="in-progress">IN PROGRESS</option> 
+                                <option value="review">REVIEW</option>
+                                <option value="done">DONE</option>
+                                </select>
                             </div>
 
 
@@ -589,11 +602,11 @@
                                     <div class="center-container">
                                         <label for="status">status</label><br>
                                         <select name="status" id="stutas">
-                            <option value="todo">TODO</option>
-                            <option value="in-progress">IN PROGRESS</option> 
-                            <option value="review">REVIEW</option>
-                            <option value="done">DONE</option>
-                        </select>
+                                            <option value="todo">TODO</option>
+                                            <option value="in-progress">IN PROGRESS</option> 
+                                            <option value="review">REVIEW</option>
+                                            <option value="done">DONE</option>
+                                        </select>
                                     </div>
                                     <div class="card-modal-btn">
                                         <p class="edit"><a class="dropdown-item" href="page/form.html">EDIT</a></p>
@@ -611,41 +624,42 @@
             <div class="card-add">
                 <a href="page/form.html"><i class="fas fa-plus-circle"></i></a>
             </div>
-            <footer>
-                <div class="container-fluid" id="footer">
-                    <div class="dropdown">
-                        <div class="row">
-                            <div class="col-4" style="padding: 10px;">
-                                <button class="btn bg-info" type="submit" style="width: 100%; height:60px;">Item Done</button>
-                            </div>
-                            <div class="col-4 dropup" style="padding: 10px;">
-                                <button class="btn bg-info" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 100%; height:60px; float: right;">
+            <div class="container-fluid" style="width: 100%; height: 100px;">
+
+            </div>
+        </body>
+        <footer class="fixed-bottom" id="footer">
+            <div class="container-fluid">
+                <div class="dropdown">
+                    <div class="row">
+                        <div class="col-4" style="padding: 10px;">
+                            <button class="btn bg-info" type="submit" style="width: 100%; height:60px;">Item Done</button>
+                        </div>
+                        <div class="col-4 dropup" style="padding: 10px;">
+                            <button class="btn bg-info" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 100%; height:60px; float: right;">
                                         order to
                                         </button>
-                                <ul class="dropdown-menu" style="width: 100%;">
-                                    <li><a class="dropdown-item" href="#">Time</a></li>
-                                    <li><a class="dropdown-item" href="#">Due Date</a></li>
-                                    <li><a class="dropdown-item" href="#">Status</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-4 dropup" style="padding: 10px;">
-                                <button class="btn bg-info" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 100%; height:60px; float: right;">
+                            <ul class="dropdown-menu" style="width: 100%;">
+                                <li><a class="dropdown-item" href="#">Time</a></li>
+                                <li><a class="dropdown-item" href="#">Due Date</a></li>
+                                <li><a class="dropdown-item" href="#">Status</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-4 dropup" style="padding: 10px;">
+                            <button class="btn bg-info" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 100%; height:60px; float: right;">
                                         <i class="fas fa-grip-horizontal"></i>
                                         </button>
-                                <ul class="dropdown-menu" style="width: 100%;">
-                                    <li><a class="dropdown-item" href="page/form.html">Add Item</a></li>
-                                    <li><a class="dropdown-item" href="#">Setting</a></li>
-                                    <li><a class="dropdown-item" href="#">Reset</a></li>
-                                    <li><a class="dropdown-item" href="#">Quit</a></li>
-                                </ul>
-                            </div>
+                            <ul class="dropdown-menu" style="width: 100%;">
+                                <li><a class="dropdown-item" href="page/form.html">Add Item</a></li>
+                                <li><a class="dropdown-item" href="#">Setting</a></li>
+                                <li><a class="dropdown-item" href="#">Reset</a></li>
+                                <li><a class="dropdown-item" href="#">Quit</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </footer>
-        </body>
-    </div>
-</body>
-
+            </div>
+        </footer>
+        </div>
 
 </html>
