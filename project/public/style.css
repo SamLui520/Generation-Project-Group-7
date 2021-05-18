@@ -1,0 +1,99 @@
+#footer {
+    background-color: #D4F1F4;
+    height: 100px;
+    border-style: solid;
+}
+
+#item1{
+    padding: 40px; 
+    border-style: groove; 
+    background-image: url('http://localhost:8080/image/bg1.jpg');
+    color: #D4F1F4;
+}
+
+.card-add {
+    width: 100%;
+    height: fit-content;
+    margin: 10px 10px;
+    border-radius: 30px;
+    background-color: rgb(143, 143, 143);
+    border: darkblue solid 5px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 40px;
+}
+
+.card-add i {
+    font-size: 92px;
+    text-align: center;
+}
+
+.logo {
+    margin: 10px auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+.side-navbar {
+    width: 180px;
+    height: 100%;
+    position: fixed;
+    margin-left: -300px;
+    background-color: #100901;
+    transition: 0.5s;
+}
+
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover {
+    background-color: #ffffff26;
+}
+
+.my-container {
+    transition: 0.4s;
+}
+
+.active-nav {
+    margin-left: 0;
+}
+
+.active-cont {
+    margin-left: 180px;
+}
+
+#menu-btn {
+    background-color: #100901;
+    color: #fff;
+}
+
+.my-container input {
+    border-radius: 2rem;
+    padding: 2px 20px;
+}
+
+.Mobile {
+    width: 828px;
+}
+
+@media only screen and (min-width: 829px) {
+    div.Mobile {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 828px) {
+    div.Desktop {
+        display: none;
+    }
+}
+
