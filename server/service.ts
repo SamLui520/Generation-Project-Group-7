@@ -26,10 +26,10 @@ export class Service {
         return result;
     }
 
-    async addTodoList(id: string, item: string | null, content: string | null, dueDate: string | null, startDate: string | null, startTime: string | null, endDate: string | null, endTime: string | null, category: string | null, assignedTo: string | null, statu: string | null) {
+    async addTodoList(id: string, item: string | null, content: string | null, dueDate: string | null, startDate: string | null, startTime: string | null, endDate: string | null, endTime: string | null, category: string | null, assignedTo: string | null, status: string | null) {
 
         const filePath = __dirname + '/TodoList.csv'
-        const reformedInput = "\n" + id + "," + item + "," + content + "," + dueDate + "," + startDate + "," + startTime + ","  + endDate + "," +  endTime + "," + category + "," + assignedTo + "," + statu;
+        const reformedInput = "\n" + id + "," + item + "," + content + "," + dueDate + "," + startDate + "," + startTime + ","  + endDate + "," +  endTime + "," + category + "," + assignedTo + "," + status;
 
         await fs.appendFile(filePath, reformedInput, (e) => console.log(e))
 
@@ -56,7 +56,7 @@ export class Service {
     }
 
     // [done]
-    async updateTodoList(id: string, item?: string, content?: string, dueDate?: string, startDate?: string, startTime?: string, endDate?: string, endTime?: string, category?: string, assignedto?: string, status?: string) {
+    async updateTodoList(id: string, item?: string, content?: string, dueDate?: string, startDate?: string, startTime?: string, endDate?: string, endTime?: string, category?: string, assignedTo?: string, status?: string) {
 
         const filePath = __dirname + '/TodoList.csv'
         const data = await fs.promises.readFile(filePath, 'utf-8')
@@ -75,7 +75,7 @@ export class Service {
                 words[6] = "" + endDate;
                 words[7] = "" + endTime;
                 words[8] = "" + category;
-                words[9] = "" + assignedto;
+                words[9] = "" + assignedTo;
                 words[10] = "" + status;
                 result = result + words.join(',') + "\n"
             } else {

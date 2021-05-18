@@ -362,10 +362,10 @@
                 </div>
                 <form method="POST" id='fetchAddItem' action='http://localhost:8080/todolist'>
                     <div class="modal-body">
-                        <div class="row">
-                            <div class="col-12">
+                        <div class="row g-3">
+                            <div class="col-12" id="itemId">
                                 <label class="form-label">ID:</label>
-                                <input type='text' name='fetchId' id='fetchId' />
+                                <input type='text' name='fetchId' id='fetchId' value=""/>
                             </div>
                             <div class="col-12">
                                 <label class="form-label">Item:</label>
@@ -377,7 +377,7 @@
                             </div>
                             <div class="col-6">
                                 <label class="form-label">Status:</label>
-                                <select id="fetchStatu" class="form-select">
+                                <select id="fetchStatus" class="form-select">
                                             <option selected>Choose...</option>
                                                 <option>todo</option>
                                                 <option>in-progress</option>
@@ -429,7 +429,7 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <div><button type='submit' class="btn bg-primary">Save</button></div>
+                        <div><button type='click' class="btn bg-primary">Save</button></div>
                     </div>
             </div>
             </form>
@@ -446,10 +446,11 @@
                     </div>
                     <form method="POST" id='updateItem' action='http://localhost:8080/todolist'>
                         <div class="modal-body">
-                            <div class="row">
+                            <div class="row g-3">
                                 <div class="col-12">
-                                    <label class="form-label">ID:</label>
-                                    <input type='text' name='fetchId2' id='fetchId2' />
+                                    <label class="input-group-text">ID:</label>
+                                    <select class="form-select" id="chooseId1">                                      
+                                    </select>
                                 </div>
                                 <div class="col-12">
                                     <label class="form-label">Item:</label>
@@ -461,7 +462,7 @@
                                 </div>
                                 <div class="col-6">
                                     <label class="form-label">Status:</label>
-                                    <select id="fetchStatu2" class="form-select">
+                                    <select id="fetchStatus2" class="form-select">
                                                 <option selected>Choose...</option>
                                                     <option>todo</option>
                                                     <option>in-progress</option>
@@ -532,15 +533,17 @@
                             <div class="modal-body">
                                 <div class="row">
                                     <div class="col-12">
-                                        <label class="form-label">ID:</label>
-                                        <input type='text' name='fetchId2' id='fetchId3' />
+                                            <label class="input-group-text">ID:</label>
+                                            <select class="form-select" id="chooseId2">
+                                              
+                                            </select>                
+                                    </div>
                                 </div>
-                            </div>
                             <div class="modal-footer">
                                 <div><button type='submit' class="btn bg-danger">Delete</button></div>
                             </div>
-                    </div>
-                    </form>
+                            </div>
+                        </form>
                 </div>
             </div>
         </div>

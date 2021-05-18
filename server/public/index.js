@@ -7,17 +7,22 @@ let jsonResponse = [];
 const desktop = document.querySelector('#fetch-area');
 const mobile = document.querySelector('#fetch-area2');
 
+//load dataBase and show data
 const loadTodoList = async () => {
         const data = await fetch('http://localhost:8080/todolist')
         jsonResponse = await data.json()
         displayTodoList1(jsonResponse)
         displayTodoList2(jsonResponse)
+        displayId1(jsonResponse)
+        displayId2(jsonResponse) 
+        displayId3(jsonResponse)
 };
 
+//searching
 searchBar1.addEventListener('keyup', (e) => {
     const searchString = e.target.value.toLowerCase();
 
-    const filteredCharacters = jsonResponse.filter((i) => {
+    const filter = jsonResponse.filter((i) => {
  
             return (
                 i.id.toLowerCase().includes(searchString)||
@@ -30,17 +35,18 @@ searchBar1.addEventListener('keyup', (e) => {
                 i.category.toLowerCase().includes(searchString) ||
                 i.assignedTo.toLowerCase().includes(searchString) ||
                 i.content.toLowerCase().includes(searchString) ||
-                i.statu.toLowerCase().includes(searchString)
+                i.status.toLowerCase().includes(searchString)
             );
         
     });
-    displayTodoList1(filteredCharacters);
+    displayTodoList1(filter);
 });
 
+//searching
 searchBar2.addEventListener('keyup', (e) => {
     const searchString = e.target.value.toLowerCase();
 
-    const filteredCharacters = jsonResponse.filter((i) => {
+    const filter = jsonResponse.filter((i) => {
         return (
             i.id.toLowerCase().includes(searchString) ||
             i.item.toLowerCase().includes(searchString) ||
@@ -52,12 +58,48 @@ searchBar2.addEventListener('keyup', (e) => {
             i.category.toLowerCase().includes(searchString) ||
             i.assignedTo.toLowerCase().includes(searchString) ||
             i.content.toLowerCase().includes(searchString) ||
-            i.statu.toLowerCase().includes(searchString)
+            i.status.toLowerCase().includes(searchString)
         );
     });
-    displayTodoList2(filteredCharacters);
+    displayTodoList2(filter);
 });
 
+async function displayId1(jsonResponse) {
+    let displayArea = document.querySelector('#chooseId1');
+    let displayhtml = ""
+    for (let i of jsonResponse) {
+        displayhtml = displayhtml +
+        `<option>${i.id}</option>`
+    }
+    displayArea.innerHTML = displayhtml;
+};
+
+async function displayId2(jsonResponse) {
+    let displayArea = document.querySelector('#chooseId2');
+    let displayhtml = ""
+    for (let i of jsonResponse) {
+        displayhtml = displayhtml +
+        `<option>${i.id}</option>`
+    }
+    displayArea.innerHTML = displayhtml;
+};
+
+async function displayId3(jsonResponse) {
+    let displayArea = document.querySelector('#itemId');
+    let displayhtml = ""
+    for (let i = 0 ; i < jsonResponse.length; i++) {
+        if(i == (jsonResponse.length -1)){
+            newId = `00${(parseInt(jsonResponse[i].id, 10) + 1)}`
+            displayhtml = displayhtml +
+            `<label class="form-label">ID:</label>
+            <input type='text' name='fetchId' id='fetchId' value="${newId}"/>`
+        }
+    }
+    displayArea.innerHTML = displayhtml;
+};
+
+
+//show any item in desktop
 async function displayTodoList1(jsonResponse) {
     let displayArea = desktop
     let displayhtml = ""
@@ -116,7 +158,7 @@ async function displayTodoList1(jsonResponse) {
         </div>
         <div class="col-6" style="line-height: 50px;">
             <h2>                     
-                <p>status: ${i.statu}</p>
+                <p>status: ${i.status}</p>
             </h2>
         </div>
         <div class="d-flex flex-row-reverse">
@@ -130,6 +172,7 @@ async function displayTodoList1(jsonResponse) {
     displayArea.innerHTML = displayhtml;
 };
 
+//show any item in mobile
 async function displayTodoList2(jsonResponse) {
     let displayArea = mobile
     let displayhtml = ""
@@ -188,7 +231,7 @@ async function displayTodoList2(jsonResponse) {
         </div>
         <div class="col-6" style="line-height: 50px;">
             <h2>                     
-                <p>status: ${i.statu}</p>
+                <p>status: ${i.status}</p>
             </h2>
         </div>
         <div class="d-flex flex-row-reverse">
@@ -212,7 +255,7 @@ fetchAddItem.addEventListener('submit', async(event) => {
     formObject['id'] = form.fetchId.value;
     formObject['item'] = form.fetchItem.value;
     formObject['assignedTo'] = form.fetchAssignedTo.value;
-    formObject['statu'] = form.fetchStatu.value;
+    formObject['status'] = form.fetchStatus.value;
     formObject['category'] = form.fetchCategory.value;
     formObject['dueDate'] = form.fetchDueDate.value;
     formObject['startDate'] = form.fetchStartDate.value;
@@ -230,15 +273,16 @@ fetchAddItem.addEventListener('submit', async(event) => {
     location.reload();
 })
 
+// example for fetch: Put with JSON format
 const updateItem = document.querySelector('#updateItem')
 updateItem.addEventListener('submit', async(event) => {
     event.preventDefault();
     const form = event.target;
     const formObject = {};
-    formObject['id'] = form.fetchId2.value;
+    formObject['id'] = form.chooseId1.value;
     formObject['item'] = form.fetchItem2.value;
     formObject['assignedTo'] = form.fetchAssignedTo2.value;
-    formObject['statu'] = form.fetchStatu2.value;
+    formObject['status'] = form.fetchStatus2.value;
     formObject['category'] = form.fetchCategory2.value;
     formObject['dueDate'] = form.fetchDueDate2.value;
     formObject['startDate'] = form.fetchStartDate2.value;
@@ -249,25 +293,6 @@ updateItem.addEventListener('submit', async(event) => {
     updateAllItem(formObject)
     location.reload();
 })
-
-const removeItem = document.querySelector('#removeItem')
-removeItem.addEventListener('submit', async(event) => {
-    event.preventDefault();
-    const form = event.target;
-    removeAllItem(form.fetchId2.value)
-    location.reload();
-})
-
-
-
-async function removeAllItem(id) {
-    try {
-        let response = await fetch(`http://localhost:8080/todolist/${id}`, {
-            method: "DELETE",
-        });
-    } catch (err) {
-    }
-}
 
 async function updateAllItem(item) {
     try {
@@ -282,6 +307,25 @@ async function updateAllItem(item) {
     }
 }
 
+// example for fetch: Delete with JSON format
+const removeItem = document.querySelector('#removeItem')
+removeItem.addEventListener('submit', async(event) => {
+    event.preventDefault();
+    const form = event.target;
+    removeAllItem(form.chooseId2.value)
+    location.reload();
+})
+
+async function removeAllItem(id) {
+    try {
+        let response = await fetch(`http://localhost:8080/todolist/${id}`, {
+            method: "DELETE",
+        });
+    } catch (err) {
+    }
+}
+
+//run function for load dataBase and show data
 loadTodoList();
 
 

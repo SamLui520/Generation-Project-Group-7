@@ -73,8 +73,8 @@ export class Controller {
                 });
                 return;
             }
-            const {id, item, content, dueDate, startDate, startTime, endDate, endTime, category, assignedTo, statu} = req.body;
-            res.status(200).json(await this.service.addTodoList(id, item, content, dueDate, startDate, startTime, endDate, endTime, category, assignedTo, statu))
+            const {id, item, content, dueDate, startDate, startTime, endDate, endTime, category, assignedTo, status} = req.body;
+            res.status(200).json(await this.service.addTodoList(id, item, content, dueDate, startDate, startTime, endDate, endTime, category, assignedTo, status))
 
         } catch (e) {
             console.log(e);
@@ -109,7 +109,7 @@ export class Controller {
                     req.body.endTime,
                     req.body.category,
                     req.body.assignedTo,
-                    req.body.statu
+                    req.body.status
                 )
             )
         } catch (e) {
