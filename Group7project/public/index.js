@@ -855,6 +855,7 @@ register.addEventListener('submit', async(event) => {
             },
             body: JSON.stringify(formObject),
         })
+        location.reload();
     }
 })
 
