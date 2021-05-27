@@ -5,51 +5,6 @@ export class Controller {
     constructor(private service: Service) {
     }
 
-    getSomething = async (req: Request, res: Response) => {
-        try {
-            res.status(200).json({
-                result: true,
-                msg: 'You can GET something now!!'
-            })
-        } catch (e) {
-            res.status(500).json({
-                result: false,
-                msg: e.toString()
-            })
-        }
-    }
-
-    login = async (req: Request, res: Response) => {
-        try {
-            if (!req.body.username || !req.body.password) {
-                res.status(401).json({
-                    result: false,
-                    msg: 'Wrong Username or Password',
-                });
-                return;
-            }
-            const { username, password } = req.body;
-            res.status(200).json({
-                username: username,
-                password: password
-            })
-        } catch (e) {
-            console.log(e);
-            res.status(500).json({
-                result: false,
-                msg: toString(),
-            })
-        }
-    }
-
-
-
-
-
-
-
-
-
     // [done]
     getTodoList = async (req: Request, res: Response) => {
         try {
@@ -142,21 +97,93 @@ export class Controller {
         }
     }
 
-
-
-
-
-
-
-
-
-    // [todo] Note: 1-username, 2-password
-    getprofile = async (req: Request, res: Response) => {
+    getLogin = async (req: Request, res: Response) => {
         try {
-            res.status(200).json({
-                result: true,
-                msg: 'You can GET something now!!'
+            const readLogin = await this.service.readLogin()
+            res.status(200).json(readLogin)
+        } catch (e) {
+            res.status(500).json({
+                result: false,
+                msg: e.toString()
             })
+        }
+    }
+   
+    postLogin = async (req: Request, res: Response) => {
+        try {
+            if (!req.body.id) {
+                res.status(401).json({
+                    result: false,
+                    msg: 'Missing Data',
+                });
+                return;
+            }
+            const {id, FirstName, LastName, EmailAddress, Password} = req.body;
+            res.status(200).json(await this.service.addLogin(id, FirstName, LastName, EmailAddress, Password))
+
+        } catch (e) {
+            console.log(e);
+            res.status(500).json({
+                result: false,
+                msg: toString(),
+                log: e.toString()
+            })
+        }
+    }
+
+    putLogin = async (req: Request, res: Response) => {
+        try {
+            if (!req.params.id) {
+                res.status(401).json({
+                    result: false,
+                    msg: 'Missing id',
+                });
+                return;
+            }
+            // const { username, password } = req.body;
+            res.status(200).json(
+                await this.service.updateLogin(
+                    req.params.id,
+                    req.body.FirstName,
+                    req.body.LastName,
+                    req.body.EmailAddress,
+                    req.body.Password
+                )
+            )
+        } catch (e) {
+            console.log(e);
+            res.status(500).json({
+                result: false,
+                msg: toString(),
+            })
+        }
+    }
+
+    // [done] Note: 1-id, 2-content, 3-dueDate 4-inputDate 5-picture
+    deleteLogin = async (req: Request, res: Response) => {
+        try {
+            if (!req.params.id) {
+                res.status(401).json({
+                    result: false,
+                    msg: 'Missing id',
+                });
+                return;
+            }
+            // await this.service.deleteTodoList(req.params.id)
+            res.status(200).json(await this.service.deleteLogin(req.params.id))
+        } catch (e) {
+            console.log(e);
+            res.status(500).json({
+                result: false,
+                msg: toString(),
+            })
+        }
+    }
+
+    getWhoLogin = async (req: Request, res: Response) => {
+        try {
+            const readWhoLogin = await this.service.readWhoLogin()
+            res.status(200).json(readWhoLogin)
         } catch (e) {
             res.status(500).json({
                 result: false,
@@ -165,21 +192,23 @@ export class Controller {
         }
     }
 
-    // [todo] Note: 1-username, 2-password
-    postprofile = async (req: Request, res: Response) => {
+    putWhoLogin = async (req: Request, res: Response) => {
         try {
-            if (!req.body.username || !req.body.password) {
+            if (!req.params.id) {
                 res.status(401).json({
                     result: false,
-                    msg: 'Wrong Username or Password',
+                    msg: 'Missing id',
                 });
                 return;
             }
-            const { username, password } = req.body;
-            res.status(200).json({
-                username: username,
-                password: password
-            })
+            // const { username, password } = req.body;
+            res.status(200).json(
+                await this.service.updateWhoLogin(
+                    req.params.id,
+                    req.body.userName,
+                    req.body.login
+                )
+            )
         } catch (e) {
             console.log(e);
             res.status(500).json({
@@ -188,29 +217,4 @@ export class Controller {
             })
         }
     }
-
-    // [todo] Note: 1-username, 2-password
-    putprofile = async (req: Request, res: Response) => {
-        try {
-            if (!req.body.username || !req.body.password) {
-                res.status(401).json({
-                    result: false,
-                    msg: 'Wrong Username or Password',
-                });
-                return;
-            }
-            const { username, password } = req.body;
-            res.status(200).json({
-                username: username,
-                password: password
-            })
-        } catch (e) {
-            console.log(e);
-            res.status(500).json({
-                result: false,
-                msg: toString(),
-            })
-        }
-    }
-
 }

@@ -1,0 +1,12 @@
+id,item,content,dueDate,startDate,startTime,endDate,endTime,category,assignedTo,status
+001,interview,testing,2021-05-14,2021-05-14,09:00,2021-05-14,10:00,work,Sam,todo
+002,review,testing,2021-05-14,2021-05-14,12:15,2021-05-14,17:15,study,Tony,complete
+003,Family Dinner,testing,2021-05-14,2021-05-14,18:00,2021-05-14,22:00,family,Peter,review
+004,Watch Movie,testing,2021-05-14,2021-05-14,14:00,2021-05-14,15:30,family,Mary,complete
+005,Project,Do it now!,2021-05-27,2021-06-04,19:59,2021-06-02,19:59,study,Tony,todo
+006,Part Time,$28/hr,2021-05-12,2021-05-28,19:00,2021-05-29,20:00,work,Tom,in-progress
+007,interview,testing,2021-05-14,2021-05-14,09:00,2021-05-14,10:00,work,Sam,complete
+008,Chinese HW,The teacher is nice!,2021-06-04,2021-06-24,19:03,2021-06-04,19:03,study,Peter,in-progress
+009,Freelance job,100/hr,2021-06-04,2021-06-03,,2021-06-04,,work,Myself,todo
+0010,Dinner with Dad,Booking is confirmed,2021-06-04,2021-06-04,19:05,2021-06-04,20:05,family,Dad,todo
+0011,Eng HW,Hello Hong Kong!,2021-06-04,2021-06-24,18:09,2021-06-04,19:10,study,Mary,review

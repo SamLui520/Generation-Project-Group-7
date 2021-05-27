@@ -5,23 +5,17 @@ export function createRoute (controller: Controller) {
 
     const routes = express.Router();
     
-    // [done] CRUD task
     routes.get('/todolist', controller.getTodoList);
     routes.post('/todolist', controller.postTodoList);
     routes.delete('/todolist/:id', controller.deleteTodoList);
     routes.put('/todolist/:id', controller.putTodoList);
     
-    // [todo] CRUD task
-   
-    
-    // [todo] register
-    routes.get('/profile', controller.getprofile);
-    routes.post('/profile', controller.postprofile);
-    // routes.put('/profile', controller.putprofile);
-    
-    // [todo] user login
-    routes.post('/login', controller.login);
+    routes.get('/login', controller.getLogin);
+    routes.post('/login', controller.postLogin);
+    routes.delete('/login/:id', controller.deleteLogin);
+    routes.put('/login/:id', controller.putLogin);
 
-    
+    routes.get('/whologin', controller.getWhoLogin);
+    routes.put('/whologin/:id', controller.putWhoLogin);
     return routes;
 }

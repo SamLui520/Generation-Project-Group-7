@@ -1,5 +1,0 @@
-id,item,content,dueDate,startDate,startTime,endDate,endTime,category,assignedTo,status
-001,interview,testing,2021-05-14,2021-05-14,9:00,2021-05-14,10:00,work,Sam,todo
-002,review,testing,2021-05-14,2021-05-14,12:15,2021-05-14,17:15,study,Tony,done
-003,Family Dinner,testing,2021-05-14,2021-05-14,18:00,2021-05-14,22:00,family,Peter,review
-004,Watch Moive,testing,2021-05-14,2021-05-14,14:00,2021-05-14,15:30,friend,Mary,in-progress
