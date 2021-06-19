@@ -10,3 +10,4 @@ id,item,content,dueDate,startDate,startTime,endDate,endTime,category,assignedTo,
 009,Freelance job,100/hr,2021-06-04,2021-06-03,,2021-06-04,,work,Myself,todo
 0010,Dinner with Dad,Booking is confirmed,2021-06-04,2021-06-04,19:05,2021-06-04,20:05,family,Dad,todo
 0011,Eng HW,Hello Hong Kong!,2021-06-04,2021-06-24,18:09,2021-06-04,19:10,study,Mary,review
+0012,222,111,2021-05-20,2021-05-26,,,,study,222,complete
